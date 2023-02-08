@@ -108,15 +108,21 @@ namespace IterationStatements
         public static void MultTable()
         {
             int[] array = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-            
+            Console.WriteLine("Pick a number: ");
+            var k = int.TryParse(Console.ReadLine(), out int k1);
 
-            for (int i = 1; i != array.Length; i++)
+            for (int i = 0; i < array.Length; i++)
                 
             {
-                int prod = i * 12;
-                Console.WriteLine($"{i} x 12 = {prod}");
-            } 
-            
+                int prod = array[i] * k1;
+                Console.WriteLine($"{k1} x {array[i]} = {prod}");
+            }
+
+            foreach (int num5 in array)
+            {
+                int prod = num5 * k1;
+
+            }
         }
 
 
