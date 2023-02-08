@@ -4,8 +4,7 @@ namespace IterationStatements
 {
     public class Program
     {
-        //LukeWarm Section: Create methods below
-        //Write a method that will print to the console all numbers 1000 through - 1000
+        
         public static void Count() 
         {
             for (int a = 1000; a >= -1000; a--)
@@ -19,7 +18,7 @@ namespace IterationStatements
         }
 
 
-        //Write a method that will print to the console numbers 3 through 999 by 3 each time
+        
         public static void Threes()
         {
             for (int b = 3; b < 999; b+=3)
@@ -28,7 +27,7 @@ namespace IterationStatements
             }
         }
 
-        //Write a method to accept two integers as parameterss and check whether they are equal or not
+        
         public static void Twos(int m, int n)
         {
             if (m == n)
@@ -42,7 +41,7 @@ namespace IterationStatements
             
         }
 
-        //Write a method to check whether a given number is even or odd
+        
         public static void EvenOrOdd(int num)
         {
             if (num % 2 == 0)
@@ -55,7 +54,7 @@ namespace IterationStatements
             }
         }
         
-        //Write a method to check whether a given number is positive or negative
+        
         public static void PosOrNeg(int num1)
         {
             if (num1 > 0)
@@ -69,10 +68,7 @@ namespace IterationStatements
             }
         }
         
-        //Write a method to read the age of a candidate and determine whether they can vote.
-        //Hint: Use Parse or the safer TryParse() for an extra challenge
-        //Parse()
-        //TryParse()
+        
         public static void AgeRes()
         {
             Console.WriteLine("What is your age?");
@@ -86,8 +82,7 @@ namespace IterationStatements
                 Console.WriteLine("You CANNOT vote :(");
             }
         }
-        //Heatin Up Section:
-        //Write a method to check if an integer(from the user) is in the range -10 to 10
+        
         public static void Range()
         {
             Console.WriteLine("Pick a number");
@@ -104,7 +99,7 @@ namespace IterationStatements
             
         }
 
-        //Write a method to display the multiplication table(from 1 to 12) of a given integer
+        
         public static void MultTable()
         {
             int[] array = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
@@ -117,16 +112,17 @@ namespace IterationStatements
                 int prod = array[i] * k1;
                 Console.WriteLine($"{k1} x {array[i]} = {prod}");
             }
-
+            
             foreach (int num5 in array)
             {
+                
                 int prod = num5 * k1;
-
+                Console.WriteLine($"{k1} x {num5} = {prod}");
             }
         }
 
 
-        //Call the methods to test them in the Main method below
+        
         static void Main(string[] args)
         {
             Count();
